@@ -125,3 +125,6 @@
   enabled = true
 [include]
   path = .gitconfig.user
+[user]
+	name = Andreas Steiner
+	email = andreassteiner@gmx.de

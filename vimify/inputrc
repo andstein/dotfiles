@@ -1,1 +1,10 @@
 set editing-mode vi
+
+set bell-style none
+
+$if mode=vi
+	# zsh: bindkey -M viins 'jk' vi-cmd-mode
+  set keymap vi-insert
+  "jk": vi-movement-mode
+$endif
+

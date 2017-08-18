@@ -22,8 +22,8 @@ endfunction
 " of the line. When we're programming, we're almost always
 " interested in working with text rather than empty space. If
 " you want the traditional beginning of line, use ^
-nnoremap 0 ^
-nnoremap ^ 0
+" nnoremap 0 ^
+" nnoremap ^ 0
 
 " ,# Surround a word with #{ruby interpolation}
 map ,# ysiw#
@@ -116,7 +116,7 @@ map <silent> ,gz <C-w>o
 " way is Ctrl-w,v and Ctrl-w,s. I remap
 " this to vv and ss
 nnoremap <silent> vv <C-w>v
-nnoremap <silent> ss <C-w>s
+"nnoremap <silent> ss <C-w>s
 
 " create <%= foo %> erb tags using Ctrl-k in edit mode
 imap <silent> <C-K> <%=   %><Esc>3hi
@@ -157,8 +157,8 @@ nnoremap ` '
 " ============================
 " SplitJoin plugin
 " ============================
-nmap sj :SplitjoinSplit<cr>
-nmap sk :SplitjoinJoin<cr>
+"nmap sj :SplitjoinSplit<cr>
+"nmap sk :SplitjoinJoin<cr>
 
 " Get the current highlight group. Useful for then remapping the color
 map ,hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>

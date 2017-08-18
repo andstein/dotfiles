@@ -1,6 +1,24 @@
 let vimsettings = '~/.vim/settings'
 let uname = system("uname -s")
 
+let settings = [
+  \'NERDtree',
+  \'ag',
+  \'lightline',
+  \'vim-fugitive',
+  \'vim-tmux-navigator',
+  \'sneak',
+  \'solarized',
+  \'syntastic',
+  \'yadr-appearance',
+  \'yadr-keymap',
+  \'z_ast',
+  \]
+
+for setting in settings
+  exe 'source' vimsettings . '/' . setting . '.vim'
+endfor
+
 for fpath in split(globpath(vimsettings, '*.vim'), '\n')
 
   if (fpath == expand(vimsettings) . "/yadr-keymap-mac.vim") && uname[:4] ==? "linux"
@@ -11,5 +29,5 @@ for fpath in split(globpath(vimsettings, '*.vim'), '\n')
     continue " skip linux mappings for mac
   endif
 
-  exe 'source' fpath
+  " exe 'source' fpath
 endfor
