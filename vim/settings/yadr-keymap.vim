@@ -100,10 +100,10 @@ nnoremap <silent> ,x :bn<CR>
 " ==============================
 " Move between split windows by using the four directions H, L, K, J
 " NOTE: This has moved to vim/settings/vim-tmux-navigator.vim.
-" nnoremap <silent> <C-h> <C-w>h
-" nnoremap <silent> <C-l> <C-w>l
-" nnoremap <silent> <C-k> <C-w>k
-" nnoremap <silent> <C-j> <C-w>j
+" nnoremap <silent> <c-h> <c-w>h
+" nnoremap <silent> <c-l> <c-w>l
+" nnoremap <silent> <c-k> <c-w>k
+" nnoremap <silent> <c-j> <c-w>j
 
 " Make gf (go to file) create the file, if not existent
 nnoremap <C-w>f :sp +e<cfile><CR>
