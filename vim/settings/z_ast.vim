@@ -1,5 +1,6 @@
 
 set so=2 siso=2
+set guifont="Inconsolata XL:h13"
 nnoremap ,R :mapc \| so ~/.vim/settings.vim<cr>
 map ,<cr> :tabn<cr>
 nnoremap ,e :e <C-R>=expand('%:h:p')<CR>/
