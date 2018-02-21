@@ -4,6 +4,7 @@ let uname = system("uname -s")
 let settings = [
   \'NERDtree',
   \'ag',
+  \'ctrlp',
   \'lightline',
   \'vim-fugitive',
   \'vim-tmux-navigator',
